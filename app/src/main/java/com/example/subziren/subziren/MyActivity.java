@@ -102,7 +102,7 @@ public class MyActivity extends AppCompatActivity {
             return str;*/
             HttpURLConnection urlConnection = null; //Luo objekti, jolla haetaan informaatio webistä(sisäänrakennettu)
 
-                URL url = new URL("http://canihazip.com/s"); //Luo URL objekti johon tallennetaan nettisivun osoite
+                URL url = new URL("https://subziren.blob.core.windows.net/temperature/temperature.txt"); //Luo URL objekti johon tallennetaan nettisivun osoite
                 urlConnection = (HttpURLConnection) url.openConnection(); //Avaa yhteys
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream()); //Hae webbi sivun palauttamat tiedot yhteyden striimistä
                 InputStreamReader is = new InputStreamReader(in); //Luo uudet striimi tyypit sen lukemisen helpottamiseksi. Haluamme muuttaa tiedot Stringiksi
