@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SubZiren</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="notification_title">Juoma on nyt sopivan kylmää!</string>
+    <color name="ColdBlue">#5AADBF</color>
 </resources>

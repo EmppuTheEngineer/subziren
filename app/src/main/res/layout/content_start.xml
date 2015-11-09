@@ -6,8 +6,78 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/ColdBlue"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_start"
     tools:context="com.example.subziren.subziren.StartActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Aloitus"
+        android:id="@+id/StartButton"
+        android:onClick="StartButton_Click"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="176dp"
+        android:height="70dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Asetukset"
+        android:id="@+id/SettingsButton"
+        android:height="70dp"
+        android:layout_alignTop="@+id/StartButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/TemperatureText"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circlebackground"
+        android:height="200dp"
+        android:width="200dp"
+        android:layout_alignParentLeft="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Haluttu lämpötila"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/SettingsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:numeric="integer" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temperatureSlider"
+        android:max="150"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/temperatureTextIndicator"
+        android:layout_above="@+id/temperatureSlider"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
