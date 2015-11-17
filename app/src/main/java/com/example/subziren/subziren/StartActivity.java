@@ -43,7 +43,7 @@ public class StartActivity extends AppCompatActivity {
         temperatureText = (TextView)findViewById(R.id.TemperatureText);
         tempSlider = (SeekBar)findViewById(R.id.temperatureSlider);
         temperatureTextView = (TextView)findViewById(R.id.temperatureTextIndicator);
-        temperatureTextView.setText("TEST");
+        temperatureTextView.setText("-50");
         tempSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
